@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice-Rolling</title>
+    <link rel="stylesheet" type="text/css" href="Dicerolling.css">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+</head>
+<body>
+    <div class="container">
+        <h1>Let's Play</h1>
+        <div class="container bottom">
+            <button type="button" class="butn"
+                onClick="editNames()">
+               Enter Your Name
+            </button>
+        </div>
+        <div class="dice">
+            <p class="Player1">Player 1</p>
+            <img src="dice.png" id="dice1" class="Dice-Animation" width="100" height="100">
+        </div>
+  
+        <div class="dice">
+            <p class="Player2">Player 2</p>
+            <img src="dice.png" id="dice2" class="Dice-Animation" width="100" height="100">
+        </div>
+    </div>
+  
+    <div class="container bottom">
+        <button type="button" class="butn" id="dice-button"
+            onClick="rollTheDice()">
+            Roll the Dice
+        </button>
+    </div>
+    <h2 class="winner1">Your Score is : </h2>
+    <h2 class="winner2">Your score is :</h2>
+    <p id="info"></p>
+    <script src="Dicerolling.js"></script>
+</body>
+</html>
